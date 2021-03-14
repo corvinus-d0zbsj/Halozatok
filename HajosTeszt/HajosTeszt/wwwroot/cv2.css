@@ -37,6 +37,9 @@ body {
 #footer {
     background-color: hotpink;
 }
+.sorrendi{
+    align-content: center;
+}
 
 #nav {
     display: flex;
