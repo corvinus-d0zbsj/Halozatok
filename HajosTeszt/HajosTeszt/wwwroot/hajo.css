@@ -55,3 +55,11 @@
     color: blanchedalmond;
     cursor: pointer;
 }
+@media screen and (min-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        max-width: 1500px;
+        margin: auto;
+    }
+}
