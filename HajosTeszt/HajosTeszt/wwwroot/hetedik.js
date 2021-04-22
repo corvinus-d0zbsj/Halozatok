@@ -5,6 +5,7 @@ window.onload = () => {
     letöltés();
 }
 
+
     function letöltés() {
         fetch('/questions.json')
             .then(response => response.json())
@@ -18,7 +19,18 @@ window.onload = () => {
         }
     }
 
-
+function kérdésBetöltés(id) {
+            fetch(`/questions/${id}`)
+                .then(response => {
+                    if (!response.ok) {
+                        console.error(`Hibás válasz: ${response.status}`)                        
+                    }
+                    else {
+                        return response.json()
+                    }
+                })
+                .then(data => kérdésMegjelenítés(data));                
+        }    
 
 function kérdésMegjelenítés(k) {
         let kérdés_ide = document.getElementById("kérdés_szöveg")
