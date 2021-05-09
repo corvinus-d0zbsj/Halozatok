@@ -45,15 +45,13 @@
     color: white;
     cursor:pointer;
 }
-.jó:hover {
+.jó {
     background-color: forestgreen;
     color: blanchedalmond;
-    cursor:pointer;
 }
-.rossz:hover {
+.rossz {
     background-color: red;
     color: blanchedalmond;
-    cursor: pointer;
 }
 @media screen and (min-width: 800px) {
     body {
